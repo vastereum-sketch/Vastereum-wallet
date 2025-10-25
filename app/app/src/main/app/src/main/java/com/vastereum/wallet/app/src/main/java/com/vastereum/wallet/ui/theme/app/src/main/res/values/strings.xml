@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Vastereum Wallet</string>
+    <string name="wallet_balance">Saldo</string>
+    <string name="send">Kirim</string>
+    <string name="receive">Terima</string>
+    <string name="transactions">Transaksi</string>
+    <string name="copy_address">Salin Alamat</string>
+    <string name="welcome">Selamat datang di Vastereum Wallet</string>
+</resources>
