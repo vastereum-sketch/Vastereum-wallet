@@ -1,0 +1,2 @@
+rootProject.name = 'VastereumWallet'
+include(':app')
