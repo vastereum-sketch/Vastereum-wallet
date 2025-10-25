@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.vastereum.wallet'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.vastereum.wallet"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.1'
+    }
+
+    packagingOptions {
+        resources {
+            excludes += ['/META-INF/{AL2.0,LGPL2.1}']
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
+    implementation "androidx.core:core-ktx:1.12.0"
+    implementation "androidx.activity:activity-compose:1.8.0"
+    implementation "androidx.compose.ui:ui:1.5.1"
+    implementation "androidx.compose.material3:material3:1.2.0-alpha09"
+    implementation "org.web3j:core:4.9.7"
+    implementation "com.google.zxing:core:3.5.1"
+}
